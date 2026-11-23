@@ -1,0 +1,98 @@
+{
+  "format_version": 1,
+  "id": "shadow-tower-psx",
+  "name": "Shadow Tower",
+  "kind": "recomp",
+  "platform": "psx",
+  "source_repo": "shadow-tower-recomp",
+  "rom_identity": {
+    "crc32": [
+      "6bc061de"
+    ],
+    "md5": [
+      "43a13b3c105761bd11d1b700f00e778d"
+    ],
+    "sha1": [
+      "df441bf08b7079f8b3d36f1188f7eedd8cb73c50"
+    ],
+    "disc_serials": [
+      "SLUS-00863"
+    ],
+    "sizes": [
+      488105856
+    ],
+    "filenames": [
+      "Shadow Tower (USA).cue",
+      "Shadow Tower (USA).bin"
+    ],
+    "track_counts": [
+      1
+    ],
+    "disc_fps": [
+      "0e33bcd84804ee24edd0beb77437050c3f5674aef9beb0419ca6303503372bbe"
+    ],
+    "require_cue": true
+  },
+  "rom_extensions": [
+    ".cue",
+    ".bin",
+    ".chd"
+  ],
+  "bios_identity": {
+    "required": true,
+    "name": "SCPH1001.BIN",
+    "profile": "SCPH1001",
+    "crc32": [
+      "37157331"
+    ],
+    "md5": [
+      "924e392ed05558ffdb115408c263dccf"
+    ],
+    "sha1": [
+      "10155d8d6e6e832d6ea66db9bc098321fb5e8ebf"
+    ],
+    "sha256": [
+      "71af94d1e47a68c11e8fdb9f8368040601514a42a5a399cda48c7d3bff1e99d3"
+    ],
+    "sizes": [
+      524288
+    ],
+    "filenames": [
+      "SCPH1001.BIN"
+    ]
+  },
+  "release": {
+    "github": "alexbeavs-ps1-ports/shadow-tower-recomp",
+    "allow_prerelease": false,
+    "asset_glob": {
+      "windows-x64": "shadow-tower-*-windows-x64.zip",
+      "linux-x64": "shadow-tower-*-linux-x64.zip",
+      "macos-arm64": "shadow-tower-*-macos-arm64.zip",
+      "macos-x64": "shadow-tower-*-macos-x64.zip"
+    }
+  },
+  "launch": {
+    "windows": "shadow_tower.exe",
+    "linux": "shadow_tower",
+    "macos": "shadow_tower"
+  },
+  "build": {
+    "source": {
+      "github": "alexbeavs-ps1-ports/shadow-tower-recomp",
+      "ref": ""
+    },
+    "toolchain": {
+      "id": "cmake-clang-v1",
+      "min_version": "1.0.14"
+    },
+    "generate": {
+      "engine": "psxrecomp",
+      "config": "game.toml"
+    },
+    "cmake": {
+      "build_dir": "build",
+      "target": "psx-runtime",
+      "config": "Release"
+    }
+  }
+}

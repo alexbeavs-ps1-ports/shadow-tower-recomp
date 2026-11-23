@@ -1,0 +1,35 @@
+{
+  "cue_path": "disc/Shadow Tower (USA).cue",
+  "cue_name": "Shadow Tower (USA).cue",
+  "bin_name": "Shadow Tower (USA).bin",
+  "track_count": 1,
+  "data_track_size": 488105856,
+  "data_track_md5": "43a13b3c105761bd11d1b700f00e778d",
+  "data_track_sha1": "df441bf08b7079f8b3d36f1188f7eedd8cb73c50",
+  "data_track_crc32": "6bc061de",
+  "boot_exe": "SLUS_008.63",
+  "serial": "SLUS-00863",
+  "serial_exe": "SLUS_008.63",
+  "volume_id": "",
+  "display_name": "Shadow Tower",
+  "load_address": "0x80010000",
+  "entry_pc": "0x800101C0",
+  "text_size": "0x00000800",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "0e33bcd84804ee24edd0beb77437050c3f5674aef9beb0419ca6303503372bbe",
+  "boot_exe_sha256": "dd01da6ae1c9de87ae0f818b60da2cd59d13031c039e2c0013c3657f8654821e",
+  "boot_exe_size": 4096,
+  "boot_exe_page_crc32": [
+    "8bf5d49c"
+  ],
+  "seed_count": 10,
+  "warnings": [
+    "cue has only 1 TRACK — Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

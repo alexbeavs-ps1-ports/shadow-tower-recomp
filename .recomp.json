@@ -1,0 +1,13 @@
+{
+  "$schema": "https://recomp.fyi/schema/v1.json",
+  "game": "Shadow Tower",
+  "system": "PS1",
+  "type": "recomp",
+  "toolchain": "psxrecomp",
+  "status": "exploring",
+  "project": "shadow-tower-recomp",
+  "original": {
+    "region": "USA",
+    "serial": "SLUS-00863"
+  }
+}
